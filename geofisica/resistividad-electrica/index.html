@@ -1,0 +1,1300 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head><meta charset="utf-8">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+
+        content="Resistividad Eléctrica en La Serena. Estudios geofísicos para caracterización de suelos y diseño de puesta a tierra.">
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
+
+
+
+    <title>Resistividad Eléctrica - La Serena</title>
+
+    <script type="application/ld+json">
+
+    {
+
+      "@context": "https://schema.org",
+
+      "@type": "FAQPage",
+
+      "mainEntity": [
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Qué es la resistividad eléctrica del suelo?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "La resistividad eléctrica es una propiedad que mide la capacidad del suelo para conducir corriente eléctrica. Es fundamental para el diseño de sistemas de puesta a tierra, caracterización de acuíferos y estudios de contaminación."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Para qué se necesita un estudio de resistividad?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Se requiere para diseño de sistemas de puesta a tierra en instalaciones eléctricas, exploración de acuíferos subterráneos, caracterización geotécnica de suelos, detección de contaminación y mapeo de zonas mineralizadas."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Cómo se realiza la medición?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Se inyecta corriente eléctrica en el suelo mediante electrodos y se mide la diferencia de potencial resultante. Los datos se procesan con software especializado para obtener perfiles de resistividad del subsuelo."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Qué profundidad se puede investigar?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "La profundidad de investigación depende de la configuración de electrodos utilizada, pudiendo alcanzar desde pocos metros hasta cientos de metros de profundidad según los requerimientos del proyecto."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿El estudio cumple con normativas?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Sí, nuestros estudios cumplen con normativas nacionales e internacionales, incluyendo equipos de alta precisión e informes técnicos detallados con recomendaciones específicas."
+
+          }
+
+        }
+
+      ]
+
+    }
+
+    </script>
+
+
+
+    <style>
+
+        body {
+
+            background-color: #f5f5f5;
+
+            font-family: 'Roboto', sans-serif;
+
+            font-style: normal;
+
+            margin: 0;
+
+            color: #333;
+
+            overflow-x: hidden
+
+        }
+
+
+
+        header {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px;
+
+            background-color: #951212
+
+        }
+
+
+
+        .container-header {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: start;
+
+            max-width: 100%;
+
+            width: 70%;
+
+            overflow-x: hidden
+
+        }
+
+
+
+        .container-logo {
+
+            flex-shrink: 0;
+
+            padding-left: 50px
+
+        }
+
+
+
+        .container-logo img {
+
+            width: 220px;
+
+            height: 100px
+
+        }
+
+
+
+        .title-h1 {
+
+            flex-grow: 1;
+
+            padding-left: 90px;
+
+            color: #fff
+
+        }
+
+
+
+        .title-h1 h1 {
+
+            font-size: calc(1rem+1vw);
+
+            margin: 0;
+
+            word-wrap: break-word;
+
+            color: white
+
+        }
+
+
+
+        .container-dolor {
+
+            margin: 20px 12% 10px 12%
+
+        }
+
+
+
+        .section-correo {
+
+            margin: 20px 19% 20px 20%;
+
+            padding-right: 10px
+
+        }
+
+
+
+        .dolor {
+
+            width: 90%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-style: italic;
+
+            color: #616161;
+
+            font-size: 1.6rem;
+
+            text-align: center;
+
+            padding: 5px;
+
+            border-bottom: 1px solid #bbb
+
+        }
+
+
+
+        .section_titulo {
+
+            width: 100%;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background-color: #d33e3e;
+
+            border-radius: 7px
+
+        }
+
+
+
+        .section_titulo p {
+
+            margin: 10px 0;
+
+            font-size: 1.5rem;
+
+            color: #fff;
+
+            text-align: center
+
+        }
+
+
+
+        .dolor p {
+
+            font-size: 1.6rem;
+
+            text-align: center;
+
+            padding: 5px;
+
+            border-bottom: 1px solid #bbb
+
+        }
+
+
+
+        .container-content {
+
+            margin: 40px 18%;
+
+            text-align: left
+
+        }
+
+
+
+        .container-video{position:relative;width:100%;max-width:720px;margin:1.2rem auto;aspect-ratio:16/9;overflow:hidden;border-radius:10px}
+
+
+
+        .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+        .mtp-20 {
+
+            margin-top: 20px
+
+        }
+
+
+
+        .mtp-40 {
+
+            margin-top: 40px
+
+        }
+
+
+
+        .mtp-60 {
+
+            margin-top: 60px
+
+        }
+
+
+
+        a {
+
+            text-decoration: none
+
+        }
+
+
+
+        h2 {
+
+            font-size: 1.7rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 1.5rem;
+
+            color: #002e63
+
+        }
+
+
+
+        h3 {
+
+            font-size: 1.5rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 1.5rem
+
+        }
+
+
+
+        p {
+
+            font-size: 1.2rem;
+
+            line-height: 1.6;
+
+            margin-bottom: 1.5rem;
+
+            text-align: justify
+
+        }
+
+
+
+        ul {
+
+            font-size: 1.1rem;
+
+            line-height: 1.6
+
+        }
+
+
+
+        ul li {
+
+            margin-bottom: 15px
+
+        }
+
+
+
+        .main-container {
+
+            padding: 20px;
+
+            max-width: 1200px;
+
+            margin: auto
+
+        }
+
+
+
+        .content-container {
+
+            text-align: left
+
+        }
+
+
+
+        .transactional-content {
+
+            margin-bottom: 30px
+
+        }
+
+
+
+        .category-container {
+
+            margin: 30px 0 20px 0;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            flex-direction: row;
+
+            justify-content: center;
+
+            margin-bottom: 50px
+
+        }
+
+
+
+        .category {
+
+            flex: 1 1 11%;
+
+            margin: 10px;
+
+            align-items: center;
+
+            display: flex;
+
+            flex-direction: column
+
+        }
+
+
+
+        .category a {
+
+            color: black;
+
+            display: block;
+
+            visibility: visible;
+
+            background-color: transparent;
+
+            text-align: center
+
+        }
+
+
+
+        .category a img {
+
+            width: 315px;
+
+            height: 260px;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border: 1px solid #c1bfbf;
+
+            border-radius: 9px;
+
+            transition: opacity .3s ease-in-out;
+
+            opacity: 1
+
+        }
+
+
+
+        .category a:hover img {
+
+            opacity: .6
+
+        }
+
+
+
+        .category a h2 {
+
+            font-size: 1.7rem;
+
+            margin: 10px 0;
+
+            text-align: center
+
+        }
+
+
+
+        .maps-google {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 450px;
+
+            width: 100%;
+
+            margin-bottom: 40px
+
+        }
+
+
+
+        .maps-google iframe {
+
+            width: 600px;
+
+            height: 450px;
+
+            border: 0;
+
+            loading: "lazy";
+
+            allowfullscreen: true;
+
+            referrerpolicy: "no-referrer-when-downgrade"
+
+        }
+
+
+
+        .beneficio_contenido {
+
+            margin-bottom: 60px
+
+        }
+
+
+
+        .styl-img {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin-top: 40px
+
+        }
+
+
+
+        .styl-img img {
+
+            border: 1px solid #adacac;
+
+            max-width: 100%;
+
+            height: auto
+
+        }
+
+
+
+        @media(max-width:599px) {
+
+            .container-content {
+
+                width: 90%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-header {
+
+                width: 100%;
+
+                flex-direction: column
+
+            }
+
+
+
+            .title-h1 {
+
+                width: 100%;
+
+                text-align: center;
+
+                padding-left: 0;
+
+                padding-top: 10px
+
+            }
+
+
+
+            h2,
+
+            h3 {
+
+                font-size: 1.4rem
+
+            }
+
+
+
+            .container-logo {
+
+                flex-shrink: 0;
+
+                padding-left: 0
+
+            }
+
+
+
+            .container-logo img {
+
+                height: 80px
+
+            }
+
+
+
+            .container-dolor,
+
+            .section-correo {
+
+                margin: 20px 1% 10px 1%
+
+            }
+
+
+
+            .dolor,
+
+            .section_titulo {
+
+                width: 98%;
+
+                padding: 5px
+
+            }
+
+
+
+            .dolor p {
+
+                font-size: 1.4rem
+
+            }
+
+
+
+            .section_titulo p {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-wrap: break-word;
+
+                overflow-wrap: break-word
+
+            }
+
+
+
+            .correo {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-break: break-all
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 10px
+
+            }
+
+
+
+            .category-container {
+
+                margin: 0
+
+            }
+
+
+
+            .styl-img img {
+
+                width: 100%;
+
+                height: 200px
+
+            }
+
+        }
+
+
+
+        @media(min-width:600px) and (max-width:899px) {
+
+
+
+            .container-header,
+
+            .container-content {
+
+                width: 80%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-dolor,
+
+            .section-correo {
+
+                margin: 0
+
+            }
+
+
+
+            .dolor p {
+
+                font-size: 1.6rem;
+
+                padding: 0 10px 0 10px
+
+            }
+
+
+
+            .correo {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-break: break-all
+
+            }
+
+
+
+            h2,
+
+            p {
+
+                font-size: 20px
+
+            }
+
+
+
+            .container-logo img {
+
+                width: 200px;
+
+                height: 90px
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 15px
+
+            }
+
+        }
+
+
+
+        @media(min-width:900px) and (max-width:1199px) {
+
+
+
+            .container-header,
+
+            .container-content {
+
+                width: 85%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-logo img {
+
+                width: 210px;
+
+                height: 95px
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 20px
+
+            }
+
+        }
+
+
+
+        @media(min-width:1200px) and (max-width:1599px) {
+
+            .container-logo img {
+
+                width: 220px;
+
+                height: 100px
+
+            }
+
+
+
+            .container-content {
+
+                width: 75%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 25px
+
+            }
+
+        }
+
+
+
+        .nav-bar {
+
+            display: flex;
+
+            justify-content: start;
+
+            align-items: start;
+
+            background-color: #f0f2eb;
+
+            width: 100%;
+
+            padding: 20px 0;
+
+            border-bottom: 1px solid #ccc
+
+        }
+
+
+
+        .nav-bar-content {
+
+            padding-left: 300px
+
+        }
+
+
+
+        .nav-link {
+
+            text-decoration: none;
+
+            color: #6e7b8c;
+
+            font-weight: bold;
+
+            font-size: 26px;
+
+            padding: 10px 15px;
+
+            margin: 0 10px;
+
+            border-radius: 5px;
+
+            transition: background-color .3s;
+
+            border-right: 1px solid #ccc
+
+        }
+
+
+
+        .nav-link:hover {
+
+            background-color: #d7dadb
+
+        }
+
+    </style>
+
+
+
+
+    <link rel="canonical" href="https://mecanicadesueloslaserena.com/geofisica/resistividad-electrica/">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#002e63">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:title" content="Resistividad Eléctrica - La Serena">
+    <meta property="og:description" content="Resistividad Eléctrica en La Serena. Estudios geofísicos para caracterización de suelos y diseño de puesta a tierra.">
+    <meta property="og:url" content="https://mecanicadesueloslaserena.com/geofisica/resistividad-electrica/">
+    <meta property="og:site_name" content="Coquimbo Estudios Geotécnicos">
+    <meta property="og:image" content="https://mecanicadesueloslaserena.com/img/Estabilidad-Taludes90.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resistividad Eléctrica - La Serena">
+    <meta name="twitter:description" content="Resistividad Eléctrica en La Serena. Estudios geofísicos para caracterización de suelos y diseño de puesta a tierra.">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mecanicadesueloslaserena.com/"}, {"@type": "ListItem", "position": 2, "name": "Geofisica", "item": "https://mecanicadesueloslaserena.com/geofisica/"}, {"@type": "ListItem", "position": 3, "name": "Resistividad Electrica", "item": "https://mecanicadesueloslaserena.com/geofisica/resistividad-electrica/"}]}</script>
+<link rel="preload" href="/fonts/roboto-300.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" as="image" href="/img/geotechnicalservices1.png" fetchpriority="high"><style id="selfhost-fonts">@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url('/fonts/roboto-300.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/roboto-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto-fallback';src:local('Arial');size-adjust:100%;ascent-override:92%;descent-override:24%;line-gap-override:0%}body{font-family:'Roboto','Roboto-fallback',sans-serif}</style></head>
+
+
+
+<body>
+
+
+
+    <header>
+
+        <div class="container-header">
+
+            <div class="container-logo">
+
+                <a href="../index.html">
+
+                    <img src="/img/geotechnicalservices1.png" alt="Geotechnical Engineering" width="220px" height="100px" fetchpriority="high" loading="eager" decoding="async">
+
+                </a>
+
+            </div>
+
+            <div class="title-h1">
+
+                <h1>Resistividad Eléctrica en La Serena</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="container-content">
+
+
+
+        <div class="section-correo" style="text-align: center; font-family: sans-serif; padding: 10px;">
+
+            <div class="section_titulo">
+
+                <p><b>Obtén una cotización rápida para estudios de Resistividad Eléctrica en La Serena.</b></p>
+
+
+
+                <div
+
+                    style="background-color: #f0fdf4; border: 1px solid #25D366; border-radius: 8px; padding: 10px; margin: 15px auto; max-width: 450px;">
+
+                    
+
+                        📲 WhatsApp Directo: +56 9 7709 2993
+
+                    
+
+                    <span style="color: #666; font-size: 13px;">(La forma más rápida de cotizar)</span>
+
+                </div>
+
+
+
+                <div style="opacity: 0.8;">
+
+                    <p class="correo" style="margin: 5px;">📧 Escríbenos: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ea8985849e8b899e85aa878f898b8483898b8e8f999f8f868599868b9c998f988f848bc4898587">[email&#160;protected]</a></p>
+
+                    <p class="correo" style="margin: 5px;">☎️ Teléfono: +56 57 226 0344</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="styl-img">
+
+            <img src="../img2/electrica resitividad.webp" alt="Resistividad Eléctrica" style="max-width: 100%; height: auto; max-height: 400px; object-fit: contain;" loading="lazy" decoding="async">
+
+        </div>
+
+
+
+        <h2>Investigaciones de Resistividad Eléctrica en Terrenos</h2>
+
+        <p>La resistividad eléctrica constituye un indicador clave para evaluar las características eléctricas del sustrato geológico. Para proyectos en La Serena, estas exploraciones resultan imprescindibles al calcular sistemas de conexión a tierra, análisis geotécnicos y búsqueda de acuíferos subterráneos. Empleamos instrumentación de máxima exactitud garantizando información fidedigna del subsuelo.</p>
+
+
+
+        <h2>Técnicas de Prospección Empleadas</h2>
+
+        <h3>Sondajes Eléctricos Verticales (SEV)</h3>
+
+        <p>Exploración de la fluctuación de resistividad respecto a la profundidad en una localización determinada. Óptimo para establecer la secuencia estratigráfica eléctrica del terreno, discriminar horizontes de materiales diversos y ubicar el manto acuífero superficial.</p>
+
+
+
+        <h3>Calicatas Eléctricas Horizontales</h3>
+
+        <p>Registro de variaciones transversales de resistividad manteniendo profundidad uniforme. Útil para cartografiar transiciones litológicas, revelar sectores fracturados y detectar contaminación edáfica.</p>
+
+
+
+        <h2>Usos Prácticos en La Serena</h2>
+
+        <ul>
+
+            <li><strong>Diseño de Sistemas de Puesta a Tierra:</strong> Determinación de la resistividad del terreno
+
+                para el cálculo y diseño óptimo de mallas de tierra en subestaciones eléctricas, torres de transmisión y
+
+                edificaciones industriales.</li>
+
+            <li><strong>Caracterización Geotécnica:</strong> Identificación de capas de suelo, profundidad del basamento
+
+                rocoso y zonas con diferentes propiedades mecánicas.</li>
+
+            <li><strong>Exploración de Aguas Subterráneas:</strong> Localización de acuíferos, determinación de su
+
+                geometría y evaluación de su potencial hídrico.</li>
+
+            <li><strong>Estudios de Corrosividad:</strong> Evaluación de la agresividad del suelo hacia estructuras
+
+                metálicas enterradas como tuberías y tanques.</li>
+
+            <li><strong>Investigación Minera:</strong> Mapeo de zonas mineralizadas y estructuras geológicas de interés
+
+                económico.</li>
+
+        </ul>
+
+
+
+        <h2>Tecnología ABEM Terrameter SAS 1000</h2>
+
+        <p>Empleamos el sistema ABEM Terrameter SAS 1000, equipo de última generación para estudios de tomografía eléctrica y resistividad, que nos permite obtener datos de alta precisión del subsuelo en La Serena.</p>
+
+
+
+        <h3>Especificaciones Técnicas del Equipo</h3>
+
+        <ul>
+
+            <li><b>Transmisor:</b> Hasta 1000 mA y ± 400 V (100 W) para sondeos profundos</li>
+
+            <li><b>Receptor:</b> Alta sensibilidad con resolución de nanovoltios</li>
+
+            <li><b>Impedancia:</b> Superior a 10 MΩ</li>
+
+            <li><b>Rango dinámico:</b> Mayor a 140 dB</li>
+
+            <li><b>Protección:</b> IP66 (carcasa robusta para condiciones adversas)</li>
+
+            <li><b>Almacenamiento:</b> Más de 1.5 millones de mediciones</li>
+
+        </ul>
+
+
+
+        <h3>Capacidades y Modos de Operación</h3>
+
+        <ul>
+
+            <li><b>Resistividad eléctrica:</b> Mediciones de alta precisión</li>
+
+            <li><b>Polarización Inducida (IP):</b> Para estudios de mineralización</li>
+
+            <li><b>Autopotencial (SP):</b> Para flujos de agua subterránea</li>
+
+            <li><b>Sondeos eléctricos verticales:</b> Configuraciones clásicas (Wenner, Schlumberger, dipolo-dipolo)</li>
+
+            <li><b>Tomografía 2D/3D:</b> Con selectores multielectrodo externos</li>
+
+            <li><b>Temperatura y SP:</b> Mediciones complementarias</li>
+
+        </ul>
+
+
+
+        <h3>Profundidad de Investigación</h3>
+
+        <ul>
+
+            <li><b>Profundidad típica:</b> 300 a 600 metros en condiciones geológicas favorables</li>
+
+            <li><b>Rango de resistividades:</b> 0.05 a 100,000 Ω·m</li>
+
+            <li><b>Aplicaciones profundas:</b> Estudios hidrogeológicos, exploración minera, caracterización de cimientos</li>
+
+        </ul>
+
+
+
+        <h3>Sistema Complementario SAS LOG 300</h3>
+
+        <p>Disponemos también del sistema SAS LOG 300 para registro geofísico en pozos:</p>
+
+        <ul>
+
+            <li><b>Profundidad máxima:</b> 300 metros</li>
+
+            <li><b>Mediciones:</b> Resistividad, IP, SP, temperatura y nivel de agua</li>
+
+            <li><b>Aplicación:</b> Caracterización detallada de formaciones en pozos perforados</li>
+
+        </ul>
+
+
+
+        <h2>Ventajas de Nuestros Servicios</h2>
+
+        <ul>
+
+            <li><b>Equipo de alta potencia:</b> ABEM Terrameter SAS 1000 con capacidad de 1000 mA y ± 400 V</li>
+
+            <li><b>Gran profundidad:</b> Investigaciones hasta 300-600 metros según condiciones</li>
+
+            <li><b>Versatilidad:</b> Múltiples configuraciones de electrodos y modos de medición</li>
+
+            <li><b>Personal técnico especializado:</b> Amplia experiencia en la región de La Serena</li>
+
+            <li><b>Procesamiento avanzado:</b> Software especializado para inversión de datos</li>
+
+            <li><b>Informes técnicos detallados:</b> Con recomendaciones específicas y modelos 2D/3D</li>
+
+            <li><b>Cumplimiento normativo:</b> Estándares nacionales e internacionales</li>
+
+            <li><b>Mayor cobertura que GPR:</b> Supera ampliamente la penetración de sistemas georradar</li>
+
+        </ul>
+
+
+
+        <h2>Preguntas Frecuentes</h2>
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Qué es la resistividad eléctrica del suelo?</h3>
+
+        <p>La resistividad eléctrica es una propiedad que mide la capacidad del suelo para conducir corriente eléctrica. Es fundamental para el diseño de sistemas de puesta a tierra, caracterización de acuíferos y estudios de contaminación.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Para qué se necesita un estudio de resistividad?</h3>
+
+        <p>Se requiere para diseño de sistemas de puesta a tierra en instalaciones eléctricas, exploración de acuíferos subterráneos, caracterización geotécnica de suelos, detección de contaminación y mapeo de zonas mineralizadas.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Cómo se realiza la medición?</h3>
+
+        <p>Se inyecta corriente eléctrica en el suelo mediante electrodos y se mide la diferencia de potencial resultante. Los datos se procesan con software especializado para obtener perfiles de resistividad del subsuelo.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Qué profundidad se puede investigar?</h3>
+
+        <p>La profundidad de investigación depende de la configuración de electrodos utilizada, pudiendo alcanzar desde pocos metros hasta cientos de metros de profundidad según los requerimientos del proyecto.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿El estudio cumple con normativas?</h3>
+
+        <p>Sí, nuestros estudios cumplen con normativas nacionales e internacionales, incluyendo equipos de alta precisión e informes técnicos detallados con recomendaciones específicas.</p>
+
+
+
+        <h2>Nuestra Ubicación en La Serena</h2>
+
+        <div style="text-align: center; margin: 30px 0;">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13505.123456789012!2d-71.25123456789012!3d-29.90234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca1234567890%3A0x1234567890abcdef!2sLa%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1703001234567!5m2!1ses!2scl" width="100%" height="450" style="border:0; max-width: 800px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+
+        <div style="text-align: center; margin-top: 40px;">
+
+            <a href="index.html" style="color: #002e63; font-weight: bold; text-decoration: underline;">Volver a
+
+                Servicios Geofísicos</a>
+
+        </div>
+
+    </div>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+
+
+</html>
+

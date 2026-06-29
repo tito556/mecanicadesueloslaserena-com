@@ -1,0 +1,1231 @@
+﻿<!DOCTYPE html>
+
+<html lang="es">
+
+
+
+<head><meta charset="utf-8">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+
+        content="Resistividad Térmica del Suelo en La Serena. Estudios para sistemas geotérmicos y cables eléctricos.">
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.ico">
+
+
+
+    <title>Resistividad Térmica - La Serena</title>
+
+    <script type="application/ld+json">
+
+    {
+
+      "@context": "https://schema.org",
+
+      "@type": "FAQPage",
+
+      "mainEntity": [
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Qué es la resistividad térmica del suelo?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "La resistividad térmica es una propiedad que cuantifica la resistencia del suelo al flujo de calor. Es crítica para diseñar sistemas de cables eléctricos subterráneos, sistemas geotérmicos y optimizar la disipación térmica en instalaciones enterradas."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Por qué es importante medir la resistividad térmica?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Es fundamental para determinar la capacidad de ampacidad de cables eléctricos, diseñar intercambiadores geotérmicos eficientes, prevenir sobrecalentamiento en equipos enterrados y optimizar el rendimiento térmico de instalaciones."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Qué factores afectan la resistividad térmica?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Los principales factores son el tipo de suelo (arenas, arcillas, limos), contenido de humedad, densidad y compactación del material, temperatura ambiente y presencia de sales y minerales."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Cómo se realiza la medición?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Se utilizan métodos in-situ mediante sondas térmicas que miden la conductividad térmica del suelo, o ensayos de laboratorio en muestras representativas. Los resultados se expresan en unidades de °C·m/W."
+
+          }
+
+        },
+
+        {
+
+          "@type": "Question",
+
+          "name": "¿Los informes cumplen normativas internacionales?",
+
+          "acceptedAnswer": {
+
+            "@type": "Answer",
+
+            "text": "Sí, nuestros informes técnicos incluyen valores de resistividad térmica, perfiles del subsuelo, recomendaciones de diseño y cumplimiento de normativas IEEE e IEC."
+
+          }
+
+        }
+
+      ]
+
+    }
+
+    </script>
+
+
+
+    <style>
+
+        body {
+
+            background-color: #f5f5f5;
+
+            font-family: 'Roboto', sans-serif;
+
+            font-style: normal;
+
+            margin: 0;
+
+            color: #333;
+
+            overflow-x: hidden
+
+        }
+
+
+
+        header {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            padding: 10px;
+
+            background-color: #951212
+
+        }
+
+
+
+        .container-header {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: start;
+
+            max-width: 100%;
+
+            width: 70%;
+
+            overflow-x: hidden
+
+        }
+
+
+
+        .container-logo {
+
+            flex-shrink: 0;
+
+            padding-left: 50px
+
+        }
+
+
+
+        .container-logo img {
+
+            width: 220px;
+
+            height: 100px
+
+        }
+
+
+
+        .title-h1 {
+
+            flex-grow: 1;
+
+            padding-left: 90px;
+
+            color: #fff
+
+        }
+
+
+
+        .title-h1 h1 {
+
+            font-size: calc(1rem+1vw);
+
+            margin: 0;
+
+            word-wrap: break-word;
+
+            color: white
+
+        }
+
+
+
+        .container-dolor {
+
+            margin: 20px 12% 10px 12%
+
+        }
+
+
+
+        .section-correo {
+
+            margin: 20px 19% 20px 20%;
+
+            padding-right: 10px
+
+        }
+
+
+
+        .dolor {
+
+            width: 90%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-style: italic;
+
+            color: #616161;
+
+            font-size: 1.6rem;
+
+            text-align: center;
+
+            padding: 5px;
+
+            border-bottom: 1px solid #bbb
+
+        }
+
+
+
+        .section_titulo {
+
+            width: 100%;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background-color: #d33e3e;
+
+            border-radius: 7px
+
+        }
+
+
+
+        .section_titulo p {
+
+            margin: 10px 0;
+
+            font-size: 1.5rem;
+
+            color: #fff;
+
+            text-align: center
+
+        }
+
+
+
+        .dolor p {
+
+            font-size: 1.6rem;
+
+            text-align: center;
+
+            padding: 5px;
+
+            border-bottom: 1px solid #bbb
+
+        }
+
+
+
+        .container-content {
+
+            margin: 40px 18%;
+
+            text-align: left
+
+        }
+
+
+
+        .container-video{position:relative;width:100%;max-width:720px;margin:1.2rem auto;aspect-ratio:16/9;overflow:hidden;border-radius:10px}
+
+
+
+        .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+        .mtp-20 {
+
+            margin-top: 20px
+
+        }
+
+
+
+        .mtp-40 {
+
+            margin-top: 40px
+
+        }
+
+
+
+        .mtp-60 {
+
+            margin-top: 60px
+
+        }
+
+
+
+        a {
+
+            text-decoration: none
+
+        }
+
+
+
+        h2 {
+
+            font-size: 1.7rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 1.5rem;
+
+            color: #002e63
+
+        }
+
+
+
+        h3 {
+
+            font-size: 1.5rem;
+
+            line-height: 1.2;
+
+            margin-bottom: 1.5rem
+
+        }
+
+
+
+        p {
+
+            font-size: 1.2rem;
+
+            line-height: 1.6;
+
+            margin-bottom: 1.5rem;
+
+            text-align: justify
+
+        }
+
+
+
+        ul {
+
+            font-size: 1.1rem;
+
+            line-height: 1.6
+
+        }
+
+
+
+        ul li {
+
+            margin-bottom: 15px
+
+        }
+
+
+
+        .main-container {
+
+            padding: 20px;
+
+            max-width: 1200px;
+
+            margin: auto
+
+        }
+
+
+
+        .content-container {
+
+            text-align: left
+
+        }
+
+
+
+        .transactional-content {
+
+            margin-bottom: 30px
+
+        }
+
+
+
+        .category-container {
+
+            margin: 30px 0 20px 0;
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            flex-direction: row;
+
+            justify-content: center;
+
+            margin-bottom: 50px
+
+        }
+
+
+
+        .category {
+
+            flex: 1 1 11%;
+
+            margin: 10px;
+
+            align-items: center;
+
+            display: flex;
+
+            flex-direction: column
+
+        }
+
+
+
+        .category a {
+
+            color: black;
+
+            display: block;
+
+            visibility: visible;
+
+            background-color: transparent;
+
+            text-align: center
+
+        }
+
+
+
+        .category a img {
+
+            width: 315px;
+
+            height: 260px;
+
+            object-fit: cover;
+
+            object-position: center;
+
+            border: 1px solid #c1bfbf;
+
+            border-radius: 9px;
+
+            transition: opacity .3s ease-in-out;
+
+            opacity: 1
+
+        }
+
+
+
+        .category a:hover img {
+
+            opacity: .6
+
+        }
+
+
+
+        .category a h2 {
+
+            font-size: 1.7rem;
+
+            margin: 10px 0;
+
+            text-align: center
+
+        }
+
+
+
+        .maps-google {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            height: 450px;
+
+            width: 100%;
+
+            margin-bottom: 40px
+
+        }
+
+
+
+        .maps-google iframe {
+
+            width: 600px;
+
+            height: 450px;
+
+            border: 0;
+
+            loading: "lazy";
+
+            allowfullscreen: true;
+
+            referrerpolicy: "no-referrer-when-downgrade"
+
+        }
+
+
+
+        .beneficio_contenido {
+
+            margin-bottom: 60px
+
+        }
+
+
+
+        .styl-img {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            margin-top: 40px
+
+        }
+
+
+
+        .styl-img img {
+
+            border: 1px solid #adacac;
+
+            max-width: 100%;
+
+            height: auto
+
+        }
+
+
+
+        @media(max-width:599px) {
+
+            .container-content {
+
+                width: 90%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-header {
+
+                width: 100%;
+
+                flex-direction: column
+
+            }
+
+
+
+            .title-h1 {
+
+                width: 100%;
+
+                text-align: center;
+
+                padding-left: 0;
+
+                padding-top: 10px
+
+            }
+
+
+
+            h2,
+
+            h3 {
+
+                font-size: 1.4rem
+
+            }
+
+
+
+            .container-logo {
+
+                flex-shrink: 0;
+
+                padding-left: 0
+
+            }
+
+
+
+            .container-logo img {
+
+                height: 80px
+
+            }
+
+
+
+            .container-dolor,
+
+            .section-correo {
+
+                margin: 20px 1% 10px 1%
+
+            }
+
+
+
+            .dolor,
+
+            .section_titulo {
+
+                width: 98%;
+
+                padding: 5px
+
+            }
+
+
+
+            .dolor p {
+
+                font-size: 1.4rem
+
+            }
+
+
+
+            .section_titulo p {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-wrap: break-word;
+
+                overflow-wrap: break-word
+
+            }
+
+
+
+            .correo {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-break: break-all
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 10px
+
+            }
+
+
+
+            .category-container {
+
+                margin: 0
+
+            }
+
+
+
+            .styl-img img {
+
+                width: 100%;
+
+                height: 200px
+
+            }
+
+        }
+
+
+
+        @media(min-width:600px) and (max-width:899px) {
+
+
+
+            .container-header,
+
+            .container-content {
+
+                width: 80%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-dolor,
+
+            .section-correo {
+
+                margin: 0
+
+            }
+
+
+
+            .dolor p {
+
+                font-size: 1.6rem;
+
+                padding: 0 10px 0 10px
+
+            }
+
+
+
+            .correo {
+
+                margin: 15px 0;
+
+                font-size: 1.4rem;
+
+                word-break: break-all
+
+            }
+
+
+
+            h2,
+
+            p {
+
+                font-size: 20px
+
+            }
+
+
+
+            .container-logo img {
+
+                width: 200px;
+
+                height: 90px
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 15px
+
+            }
+
+        }
+
+
+
+        @media(min-width:900px) and (max-width:1199px) {
+
+
+
+            .container-header,
+
+            .container-content {
+
+                width: 85%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-logo img {
+
+                width: 210px;
+
+                height: 95px
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 20px
+
+            }
+
+        }
+
+
+
+        @media(min-width:1200px) and (max-width:1599px) {
+
+            .container-logo img {
+
+                width: 220px;
+
+                height: 100px
+
+            }
+
+
+
+            .container-content {
+
+                width: 75%;
+
+                margin: 0 auto
+
+            }
+
+
+
+            .container-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
+
+
+
+            .main-container {
+
+                padding: 25px
+
+            }
+
+        }
+
+
+
+        .nav-bar {
+
+            display: flex;
+
+            justify-content: start;
+
+            align-items: start;
+
+            background-color: #f0f2eb;
+
+            width: 100%;
+
+            padding: 20px 0;
+
+            border-bottom: 1px solid #ccc
+
+        }
+
+
+
+        .nav-bar-content {
+
+            padding-left: 300px
+
+        }
+
+
+
+        .nav-link {
+
+            text-decoration: none;
+
+            color: #6e7b8c;
+
+            font-weight: bold;
+
+            font-size: 26px;
+
+            padding: 10px 15px;
+
+            margin: 0 10px;
+
+            border-radius: 5px;
+
+            transition: background-color .3s;
+
+            border-right: 1px solid #ccc
+
+        }
+
+
+
+        .nav-link:hover {
+
+            background-color: #d7dadb
+
+        }
+
+    </style>
+
+
+
+
+    <link rel="canonical" href="https://mecanicadesueloslaserena.com/geofisica/resistividad-termica/">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="theme-color" content="#002e63">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:title" content="Resistividad Térmica - La Serena">
+    <meta property="og:description" content="Resistividad Térmica del Suelo en La Serena. Estudios para sistemas geotérmicos y cables eléctricos.">
+    <meta property="og:url" content="https://mecanicadesueloslaserena.com/geofisica/resistividad-termica/">
+    <meta property="og:site_name" content="Coquimbo Estudios Geotécnicos">
+    <meta property="og:image" content="https://mecanicadesueloslaserena.com/img/Estabilidad-Taludes90.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resistividad Térmica - La Serena">
+    <meta name="twitter:description" content="Resistividad Térmica del Suelo en La Serena. Estudios para sistemas geotérmicos y cables eléctricos.">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mecanicadesueloslaserena.com/"}, {"@type": "ListItem", "position": 2, "name": "Geofisica", "item": "https://mecanicadesueloslaserena.com/geofisica/"}, {"@type": "ListItem", "position": 3, "name": "Resistividad Termica", "item": "https://mecanicadesueloslaserena.com/geofisica/resistividad-termica/"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Resistividad Térmica - La Serena", "about": "Mecánica de Suelos", "inLanguage": "es-CL"}</script>
+<link rel="preload" href="/fonts/roboto-300.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/roboto-700.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" as="image" href="/img/geotechnicalservices1.png" fetchpriority="high"><style id="selfhost-fonts">@font-face{font-family:'Roboto';font-style:normal;font-weight:300;font-display:swap;src:url('/fonts/roboto-300.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/roboto-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Roboto-fallback';src:local('Arial');size-adjust:100%;ascent-override:92%;descent-override:24%;line-gap-override:0%}body{font-family:'Roboto','Roboto-fallback',sans-serif}</style></head>
+
+
+
+<body>
+
+
+
+    <header>
+
+        <div class="container-header">
+
+            <div class="container-logo">
+
+                <a href="../index.html">
+
+                    <img src="/img/geotechnicalservices1.png" alt="Geotechnical Engineering" width="220px" height="100px" fetchpriority="high" loading="eager" decoding="async">
+
+                </a>
+
+            </div>
+
+            <div class="title-h1">
+
+                <h1>Resistividad Térmica del Suelo en La Serena</h1>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="container-content">
+
+
+
+     
+
+        <div class="section-correo" style="text-align: center; font-family: sans-serif; padding: 10px;">
+
+            <div class="section_titulo">
+
+                <p><b>Obtén una cotización rápida para estudios de Resistividad Térmica en La Serena.</b></p>
+
+
+
+                <div
+
+                    style="background-color: #f0fdf4; border: 1px solid #25D366; border-radius: 8px; padding: 10px; margin: 15px auto; max-width: 450px;">
+
+                    
+
+                        📲 WhatsApp Directo: +56 9 7709 2993
+
+                    
+
+                    <span style="color: #666; font-size: 13px;">(La forma más rápida de cotizar)</span>
+
+                </div>
+
+
+
+                <div style="opacity: 0.8;">
+
+                    <p class="correo" style="margin: 5px;">📧 Escríbenos: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d3e3233293c3e29321d30383e3c33343e3c39382e283831322e313c2b2e382f38333c733e3230">[email&#160;protected]</a></p>
+
+                    <p class="correo" style="margin: 5px;">☎️ Teléfono: +56 57 226 0344</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="styl-img">
+
+            <img src="../img2/resistividadtermica.webp" alt="Resistividad Térmica" style="max-width: 100%; height: auto; max-height: 400px; object-fit: contain;" loading="lazy" decoding="async">
+
+        </div>
+
+
+
+        <h2>Concepto de Resistividad Térmica en Suelos</h2>
+
+        <p>La resistividad térmica representa una propiedad física que cuantifica la habilidad del terreno para transmitir energía calórica. Este parámetro resulta crítico al proyectar sistemas de intercambio térmico con el sustrato, incluyendo conductores eléctricos subterráneos, instalaciones geotérmicas y canalizaciones. En La Serena, donde las condiciones atmosféricas y la constitución edafológica presentan variabilidad, determinar la resistividad térmica es fundamental para desarrollos eficaces y protegidos.</p>
+
+
+
+        <h2>Relevancia de las Mediciones de Resistividad Térmica</h2>
+
+        <p>El conocimiento preciso de la resistividad térmica facilita optimizar el dimensionamiento de infraestructuras soterradas, prevenir recalentamiento de líneas de potencia, calcular apropiadamente sistemas de acondicionamiento térmico geotérmico y garantizar la durabilidad de las instalaciones. La heterogeneidad del terreno en La Serena torna indispensable ejecutar determinaciones específicas en cada emplazamiento de obra.</p>
+
+
+
+        <h2>Ámbitos de Aplicación Primordiales</h2>
+
+        <ul>
+
+            <li><strong>Cálculo de Cableado Eléctrico Enterrado:</strong> Determinación de la capacidad de transporte de corriente permisible (ampacidad) para conductores de tensión media y elevada considerando las propiedades de transferencia térmica del material circundante.</li>
+
+            <li><strong>Sistemas Geotérmicos:</strong> Diseño de intercambiadores de calor verticales u horizontales
+
+                para sistemas de climatización que aprovechan la temperatura constante del subsuelo.</li>
+
+            <li><strong>Tuberías de Transporte:</strong> Evaluación térmica para tuberías de fluidos calientes o
+
+                congelados, optimizando el aislamiento necesario.</li>
+
+            <li><strong>Almacenamiento Térmico:</strong> Diseño de sistemas de almacenamiento de energía térmica en el
+
+                subsuelo para aplicaciones industriales o de climatización.</li>
+
+            <li><strong>Subestaciones Eléctricas:</strong> Análisis térmico del suelo para el diseño de fundaciones y
+
+                sistemas de cables en instalaciones de alta potencia.</li>
+
+        </ul>
+
+
+
+        <h2>Metodología de Medición</h2>
+
+        <p>Utilizamos la técnica del probe térmico (thermal needle probe) que consiste en insertar una sonda calefactora
+
+            en el suelo y medir la respuesta térmica del material. Los datos obtenidos se procesan para determinar la
+
+            conductividad térmica y resistividad térmica del suelo a diferentes profundidades. Complementamos con
+
+            análisis de contenido de humedad y densidad del suelo, factores que influyen significativamente en las
+
+            propiedades térmicas.</p>
+
+
+
+        <h2>Factores que Afectan la Resistividad Térmica</h2>
+
+        <ul>
+
+            <li>Tipo de suelo: arenas, arcillas, limos, gravas tienen diferentes conductividades</li>
+
+            <li>Contenido de humedad: suelos húmedos conducen mejor el calor</li>
+
+            <li>Densidad y compactación del material</li>
+
+            <li>Temperatura ambiente y del subsuelo</li>
+
+            <li>Presencia de sales y minerales</li>
+
+        </ul>
+
+
+
+        <h2>Entregables del Estudio</h2>
+
+        <p>Nuestros informes técnicos incluyen valores de resistividad térmica a diferentes profundidades, perfiles
+
+            térmicos del subsuelo, recomendaciones para el diseño de instalaciones, consideraciones especiales según las
+
+            condiciones del sitio en La Serena, y cumplimiento de normativas aplicables (IEEE, IEC).</p>
+
+
+
+        <h2>Preguntas Frecuentes</h2>
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Qué es la resistividad térmica del suelo?</h3>
+
+        <p>La resistividad térmica es una propiedad que cuantifica la resistencia del suelo al flujo de calor. Es crítica para diseñar sistemas de cables eléctricos subterráneos, sistemas geotérmicos y optimizar la disipación térmica en instalaciones enterradas.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Por qué es importante medir la resistividad térmica?</h3>
+
+        <p>Es fundamental para determinar la capacidad de ampacidad de cables eléctricos, diseñar intercambiadores geotérmicos eficientes, prevenir sobrecalentamiento en equipos enterrados y optimizar el rendimiento térmico de instalaciones.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Qué factores afectan la resistividad térmica?</h3>
+
+        <p>Los principales factores son el tipo de suelo (arenas, arcillas, limos), contenido de humedad, densidad y compactación del material, temperatura ambiente y presencia de sales y minerales.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Cómo se realiza la medición?</h3>
+
+        <p>Se utilizan métodos in-situ mediante sondas térmicas que miden la conductividad térmica del suelo, o ensayos de laboratorio en muestras representativas. Los resultados se expresan en unidades de °C·m/W.</p>
+
+
+
+        <h3 style="color: #002e63; font-size: 1.3rem;">¿Los informes cumplen normativas internacionales?</h3>
+
+        <p>Sí, nuestros informes técnicos incluyen valores de resistividad térmica, perfiles del subsuelo, recomendaciones de diseño y cumplimiento de normativas IEEE e IEC.</p>
+
+
+
+        <h2>Nuestra Ubicación en La Serena</h2>
+
+        <div style="text-align: center; margin: 30px 0;">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13505.123456789012!2d-71.25123456789012!3d-29.90234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9691ca1234567890%3A0x1234567890abcdef!2sLa%20Serena%2C%20Coquimbo!5e0!3m2!1ses!2scl!4v1703001234567!5m2!1ses!2scl" width="100%" height="450" style="border:0; max-width: 800px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+
+        <div style="text-align: center; margin-top: 40px;">
+
+            <a href="index.html" style="color: #002e63; font-weight: bold; text-decoration: underline;">Volver a
+
+                Servicios Geofísicos</a>
+
+        </div>
+
+    </div>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+
+
+
+</html>
+
